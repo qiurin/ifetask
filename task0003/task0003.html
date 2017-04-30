@@ -1,49 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>task0003</title>
     <style>
+    p{
+        margin: 0px;
+        padding: 0px;
+    }
     * {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
-        div{
-            padding: 20px;
-        }
-        body{
-            background-color: #eee
-        }
-        div {
-            border: solid #999 1px;
-        }
-        .container{
-              margin: 0 auto; 
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    
+    body {
+    }
 
-        }
-        .conLeft{
-            width: 200px;
-            float: left;
-        }
-        .conCent{
+    div {
+        border: solid #999 1px;
+        margin: 20px;
+
+    }
+    img{
+        margin: 10px 10px 10px 10px;
+    }
+    .container {
+        position: relative;
+        background-color: #eee;
+        height: 460px;
+    }
+    
+    .conLeft {
+        background:white;
+        padding: 10px;
         position: absolute;
-        left: 200px;
-        right: 120px;
-        }
-        .conRight{
-            float: right;
-            width: 120px;
-        }
+        left: 0px;
+        width: 200px;
+    }
+    
+    .conCent {
+        background: white;
+        padding: 20px;
+        max-height: 420px;
+        position: absolute;
+        left: 220px;
+        right: 140px;
+        min-width: 220px;
+    }
+    
+    .conRight {
+        background: white;
+        padding: 10px;
+        position: absolute;
+        right: 0px;
+        width: 120px;
+    }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="conLeft">
-            <img src="" alt="" width="80" height="80"><p>秋林胡说</p>
+            <img src="" alt="" width="80" height="80" style="float: left">
+            <p style="margin: 10px;">秋林胡说</p>
         </div>
         <div class="conCent">
-                <p><b>我们如何做到这些？</b>
+            <p><b>我们如何做到这些？</b>
                 <br>每一个影片页面都有按钮来让你将该影片加入你个人的清单中。只要按下该按钮就能将影片加入。
                 <br>
                 <br>
@@ -58,4 +82,5 @@
         </div>
     </div>
 </body>
+
 </html>
