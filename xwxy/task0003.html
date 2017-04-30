@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>task0003 - 三栏布局</title>
+    <style type="text/css">
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    
+    body {
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    div {
+        border: solid #999 1px;
+        margin: 20px;
+    }
+    
+    img {
+        margin: 10px;
+        padding: 0px;
+        background-color: #eee;
+        width: 80px;
+        height: 80px;
+    }
+    
+    .container {
+        background: #eee;
+    }
+    
+    .leftContent {
+        padding: 10px;
+        background: white;
+        width: 200px;
+        height: 120px;
+    }
+    
+    .centerContent {
+        padding: 20px;
+        background: white;
+        min-width: 120px;
+    }
+    
+    .rightContent {
+        padding: 10px;
+        background: white;
+        width: 120px;
+    }
+    
+    b,
+    p {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .leftContent p {
+        margin: 10px 0px 0px 0px;
+        float: right;
+    }
+    /*float布局css*/
+    
+    .floatContainer {
+        min-height: 460px;
+    }
+    
+    .floatLeft {
+        float: left;
+    }
+    
+    .floatCenter {
+        margin-left: 240px;
+        margin-right: 160px;
+    }
+    
+    .floatRight {
+        float: right;
+    }
+    /*position布局*/
+    
+    .positionContainer {
+        position: relative;
+        min-height: 460px;
+    }
+    
+    .positionLeft {
+        position: absolute;
+        left: 0px;
+    }
+    
+    .positionCenter {
+        margin-left: 240px;
+        margin-right: 160px;
+    }
+    
+    .positionRight {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+    /*margin负值法*/
+    
+    .marginContainer {
+        padding: 20px;
+        min-height: 460px;
+    }
+    
+    .marginCenter {
+        margin: 0px;
+        padding: 0px;
+        border-width: 0px;
+        float: left;
+        width: 100%;
+    }
+    
+    .centerCss {
+        min-width: 120px;
+        padding: 20px;
+        margin: 0px 140px 0px 220px;
+        height: 100%;
+        background: white;
+    }
+    
+    .marginLeft {
+        margin-top: 0px;
+        float: left;
+        margin-left: -100%;
+    }
+    
+    .marginRight {
+        float: left;
+        width: 120px;
+        margin: 0px 0px 0px -120px;
+    }
+    /*calc计算*/
+    
+    .calcContainer {
+        padding: 10px;
+    }
+    
+    .calcLeft,
+    .calcCenter,
+    .calcRight {
+        margin: 10px;
+        padding: 10px;
+    }
+    
+    .calcLeft {
+        float: left;
+    }
+    
+    .calcCenter {
+        float: left;
+        width: calc(100% - 240px - 140px);
+    }
+    
+    .calcRight {
+        float: right;
+    }
+    /*css3 display:flex 布局*/
+    
+    .flexBox {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+    }
+    
+    .flexCenter {
+        flex: 1;
+        margin: 20px 0px;
+    }
+    
+    .flexLeft {
+        min-width: 200px;
+    }
+    /*css3 display:flex 布局进阶*/
+    
+    .flexCon {
+        display: flex;
+    }
+    
+    .flexL {
+        flex: 0 0 240px;
+    }
+    
+    .flexC {
+        margin: 20px 0px;
+        flex: 1;
+    }
+    
+    .flexR {
+        flex: 0 0 120px;
+    }
+    </style>
+</head>
+
+<body>
+    <h1>float布局</h1>
+    <hr>
+    <div class="container floatContainer">
+        <div class="leftContent floatLeft">
+            <img src="" alt="">
+            <p>秋林胡说</p>
+        </div>
+        <div class="rightContent floatRight">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+        </div>
+        <div class="centerContent floatCenter">
+            <p><b>我们如何做到这些？</b>
+                <br>每一个影片页面都有按钮来让你将该影片加入你个人的清单中。只要按下该按钮就能将影片加入。
+                <br>
+                <br>
+                <b>一手掌握所有你感兴趣的影片。</b>
+                <br>目前我们提供三个独立的清单供您整理。如果你已经看过上百、甚至上千片影片，你大概已经忘记你看过哪几片了。如果你是个疯狂的影片搜集狂，你大概连你有哪些片子都不能确定。这边，你可以将想要的影片、看过的影片以及拥有的影片个别整理成清单。
+                <br>
+                <br><b>在每个影片页面，你可以找到跟你一样的同好。</b>
+                <br>除了影评及评论以外，你也可以看到谁也和你一样对该影片有兴趣。你甚至可以看看在你所居住的区域是否有人拥有该影片。你可以联络对方，也许你们可以成为朋友并开始互相交换影片。</p>
+        </div>
+    </div>
+    <hr>
+    <br>
+    <br>
+    <br>
+    <h1>position布局</h1>
+    <hr>
+    <div class="container positionContainer">
+        <div class="leftContent positionLeft">
+            <img src="" alt="">
+            <p>秋林胡说</p>
+        </div>
+        <div class="centerContent positionCenter">
+            <p><b>我们如何做到这些？</b>
+                <br>每一个影片页面都有按钮来让你将该影片加入你个人的清单中。只要按下该按钮就能将影片加入。
+                <br>
+                <br>
+                <b>一手掌握所有你感兴趣的影片。</b>
+                <br>目前我们提供三个独立的清单供您整理。如果你已经看过上百、甚至上千片影片，你大概已经忘记你看过哪几片了。如果你是个疯狂的影片搜集狂，你大概连你有哪些片子都不能确定。这边，你可以将想要的影片、看过的影片以及拥有的影片个别整理成清单。
+                <br>
+                <br><b>在每个影片页面，你可以找到跟你一样的同好。</b>
+                <br>除了影评及评论以外，你也可以看到谁也和你一样对该影片有兴趣。你甚至可以看看在你所居住的区域是否有人拥有该影片。你可以联络对方，也许你们可以成为朋友并开始互相交换影片。</p>
+        </div>
+        <div class="rightContent positionRight">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+        </div>
+    </div>
+    <hr>
+    <br>
+    <br>
+    <br>
+    <h1>margin负值布局</h1>
+    <hr>
+    <div class="container marginContainer">
+        <div class="marginCenter">
+            <div class="centerCss">
+                <p><b>我们如何做到这些？</b>
+                    <br>每一个影片页面都有按钮来让你将该影片加入你个人的清单中。只要按下该按钮就能将影片加入。
+                    <br>
+                    <br>
+                    <b>一手掌握所有你感兴趣的影片。</b>
+                    <br>目前我们提供三个独立的清单供您整理。如果你已经看过上百、甚至上千片影片，你大概已经忘记你看过哪几片了。如果你是个疯狂的影片搜集狂，你大概连你有哪些片子都不能确定。这边，你可以将想要的影片、看过的影片以及拥有的影片个别整理成清单。
+                    <br>
+                    <br><b>在每个影片页面，你可以找到跟你一样的同好。</b>
+                    <br>除了影评及评论以外，你也可以看到谁也和你一样对该影片有兴趣。你甚至可以看看在你所居住的区域是否有人拥有该影片。你可以联络对方，也许你们可以成为朋友并开始互相交换影片。</p>
+            </div>
+        </div>
+        <div class="leftContent marginLeft">
+            <img src="" alt="">
+            <p>秋林胡说</p>
+        </div>
+        <div class="rightContent marginRight">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+        </div>
+        <p style="clear: both;"></p>
+    </div>
+    <hr>
+    <br>
+    <br>
+    <br>
+    <h1>浮动+calc计算布局</h1>
+    <hr>
+    <div class="container calcContainer">
+        <div class="leftContent calcLeft">
+            <img src="" alt="">
+            <p>秋林胡说</p>
+        </div>
+        <div class="centerContent calcCenter">
+            <p><b>我们如何做到这些？</b>
+                <br>每一个影片页面都有按钮来让你将该影片加入你个人的清单中。只要按下该按钮就能将影片加入。
+                <br>
+                <br>
+                <b>一手掌握所有你感兴趣的影片。</b>
+                <br>目前我们提供三个独立的清单供您整理。如果你已经看过上百、甚至上千片影片，你大概已经忘记你看过哪几片了。如果你是个疯狂的影片搜集狂，你大概连你有哪些片子都不能确定。这边，你可以将想要的影片、看过的影片以及拥有的影片个别整理成清单。
+                <br>
+                <br><b>在每个影片页面，你可以找到跟你一样的同好。</b>
+                <br>除了影评及评论以外，你也可以看到谁也和你一样对该影片有兴趣。你甚至可以看看在你所居住的区域是否有人拥有该影片。你可以联络对方，也许你们可以成为朋友并开始互相交换影片。</p>
+        </div>
+        <div class="rightContent calcRight">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+        </div>
+        <p style="clear: both;"></p>
+    </div>
+    <hr>
+    <br>
+    <br>
+    <br>
+    <h1>css3新特性 display:flex 布局</h1>
+    <hr>
+    <div class="container flexBox">
+        <div class="leftContent flexLeft">
+            <img src="" alt="">
+            <p>秋林胡说</p>
+        </div>
+        <div class="centerContent flexCenter">
+            <p><b>我们如何做到这些？</b>
+                <br>每一个影片页面都有按钮来让你将该影片加入你个人的清单中。只要按下该按钮就能将影片加入。
+                <br>
+                <br>
+                <b>一手掌握所有你感兴趣的影片。</b>
+                <br>目前我们提供三个独立的清单供您整理。如果你已经看过上百、甚至上千片影片，你大概已经忘记你看过哪几片了。如果你是个疯狂的影片搜集狂，你大概连你有哪些片子都不能确定。这边，你可以将想要的影片、看过的影片以及拥有的影片个别整理成清单。
+                <br>
+                <br><b>在每个影片页面，你可以找到跟你一样的同好。</b>
+                <br>除了影评及评论以外，你也可以看到谁也和你一样对该影片有兴趣。你甚至可以看看在你所居住的区域是否有人拥有该影片。你可以联络对方，也许你们可以成为朋友并开始互相交换影片。</p>
+        </div>
+        <div class="rightContent flxeRight">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+        </div>
+    </div>
+    <hr>
+    <br>
+    <br>
+    <br>
+    <h1>css3新特性 display:flex 布局进阶</h1>
+    <hr>
+    <div class="container flexCon">
+        <div class="leftContent flexl">
+            <img src="" alt="">
+            <p>秋林胡说</p>
+        </div>
+        <div class="centerContent flexC">
+            <p><b>我们如何做到这些？</b>
+                <br>每一个影片页面都有按钮来让你将该影片加入你个人的清单中。只要按下该按钮就能将影片加入。
+                <br>
+                <br>
+                <b>一手掌握所有你感兴趣的影片。</b>
+                <br>目前我们提供三个独立的清单供您整理。如果你已经看过上百、甚至上千片影片，你大概已经忘记你看过哪几片了。如果你是个疯狂的影片搜集狂，你大概连你有哪些片子都不能确定。这边，你可以将想要的影片、看过的影片以及拥有的影片个别整理成清单。
+                <br>
+                <br><b>在每个影片页面，你可以找到跟你一样的同好。</b>
+                <br>除了影评及评论以外，你也可以看到谁也和你一样对该影片有兴趣。你甚至可以看看在你所居住的区域是否有人拥有该影片。你可以联络对方，也许你们可以成为朋友并开始互相交换影片。</p>
+        </div>
+        <div class="rightContent flexR">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+        </div>
+    </div>
+    <hr>
+    <br>
+    <br>
+    <br>
+    <h1>布局</h1>
+    <hr>
+    <div class="container">
+        <div class="leftContent">
+            <img src="" alt="">
+            <p>秋林胡说</p>
+        </div>
+        <div class="centerContent">
+            <p><b>我们如何做到这些？</b>
+                <br>每一个影片页面都有按钮来让你将该影片加入你个人的清单中。只要按下该按钮就能将影片加入。
+                <br>
+                <br>
+                <b>一手掌握所有你感兴趣的影片。</b>
+                <br>目前我们提供三个独立的清单供您整理。如果你已经看过上百、甚至上千片影片，你大概已经忘记你看过哪几片了。如果你是个疯狂的影片搜集狂，你大概连你有哪些片子都不能确定。这边，你可以将想要的影片、看过的影片以及拥有的影片个别整理成清单。
+                <br>
+                <br><b>在每个影片页面，你可以找到跟你一样的同好。</b>
+                <br>除了影评及评论以外，你也可以看到谁也和你一样对该影片有兴趣。你甚至可以看看在你所居住的区域是否有人拥有该影片。你可以联络对方，也许你们可以成为朋友并开始互相交换影片。</p>
+        </div>
+        <div class="rightContent">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+        </div>
+    </div>
+    <hr>
+    <br>
+    <br>
+    <br>
+</body>
+
+</html>
