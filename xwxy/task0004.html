@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>task0004 - 绝对定位</title>
+    <style type="text/css">
+    .main {
+        height: 200px;
+        width: 400px;
+        background: #ccc;
+        position: absolute;
+        overflow: hidden;
+        top: calc(100% / 2 - 100px);
+        left: calc(100% / 2 - 200px);
+    }
+    
+    .leftDiv {
+        position: relative;
+        border-radius: 50px;
+        width: 100px;
+        height: 100px;
+        background: #fc0;
+        top: -50px;
+        left: -50px;
+    }
+    
+    .rightDiv {
+        position: relative;
+        border-radius: 50px;
+        width: 100px;
+        height: 100px;
+        background: #fc0;
+        bottom: -50px;
+        right: -350px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="leftDiv"></div>
+        <div class="rightDiv"></div>
+    </div>
+</body>
+
+</html>
