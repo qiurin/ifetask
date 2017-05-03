@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>task00005 - HTML 及 CSS 编码</title>
+    <style type="text/css">
+    body,
+    code,
+    dd,
+    div,
+    dl,
+    dt,
+    fieldset,
+    form,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    input,
+    legend,
+    li,
+    ol,
+    p,
+    pre,
+    td,
+    textarea,
+    th,
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+    
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    
+    div {
+        background-color: white;
+    }
+    
+    .header {
+        -webkit-box-shadow: 0px 0px 1px 0px #666666;
+        box-shadow: 0px 0px 1px 0px #666666;
+        position: relative;
+        overflow: hidden;
+        height: 80px;
+        padding: 0px 40px;
+        background: #333333;
+        color: white;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    .header h1>a {
+        color: white;
+        position: absolute;
+        overflow: hidden;
+        top: 50%;
+        -webkit-transform: translate(0%, -50%);
+        -ms-transform: translate(0%, -50%);
+        -o-transform: translate(0%, -50%);
+        transform: translate(0%, -50%);
+    }
+    
+    .header ul li a {
+        color: white;
+    }
+    
+    a:link {
+        text-decoration: none
+    }
+    
+    a:visited {
+        text-decoration: none
+    }
+    
+    a:hover {
+        text-decoration: underline
+    }
+    
+    .header ul li {
+        margin: 10px 0px 0px 40px;
+        float: right;
+    }
+    
+    .boxdow {
+        -webkit-box-shadow: 1px 1px 1px 1px #666666;
+        box-shadow: 1px 1px 1px 1px #666666;
+        margin: 10px;
+        padding: 10px;
+    }
+    
+    #main {
+        position: relative;
+        margin: 0px 20px;
+    }
+    
+    .container {
+        width: calc(100% - 220px - 30px);
+        min-width: 120px;
+        left: 0px;
+        top: 0px;
+    }
+    
+    .content a {
+        margin: 0px 10px 0px 3px;
+    }
+    
+    .content h2,
+    .content p,
+    .subContainer ul,
+    .subContainer ol,
+    .subContainer h3,
+    .subContainer table {
+        margin: 6px;
+    }
+    
+    .sindebar {
+        position: absolute;
+        text-align: left;
+        width: 240px;
+        top: -10px;
+        right: 0px;
+        margin-right: 10px;
+    }
+    
+    .fooder {
+        position: relative;
+        height: 60px;
+        background-color: #333333;
+        -webkit-box-shadow: 1px 0px 0px 0px #666666;
+        box-shadow: 1px 0px 0px 0px #666666;
+    }
+    
+    .fooder p {
+        position: absolute;
+        color: white;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .fooder a {
+        color: white;
+    }
+    
+    .sindebar div {
+        margin: 6px;
+    }
+    
+    .sindebar label {
+        position: absolute;
+        margin-right: 155px;
+        right: 0
+    }
+    
+    .sindebar p {
+        border-color: #bbbbbb;
+        border-left-style: solid;
+        font: bold 16px/24px Microsoft YaHei, Serif;
+        padding-left: 6px;
+        margin-bottom: 10px;
+    }
+    
+    .sindebarInput {
+        width: 120px;
+    }
+    
+    .sindebar form {
+        padding-left: 70px;
+    }
+    
+    .submitUp {
+        background-color: #999999;
+        width: 190px;
+        height: 30px;
+        -webkit-box-shadow: 1px 1px 1px 1px #999999;
+        box-shadow: 1px 1px 1px 1px #999999;
+        -webkit-transform: translate(-55px, 0%);
+        -ms-transform: translate(-55px, 0%);
+        -o-transform: translate(-55px, 0%);
+        transform: translate(-55px, 0%);
+        border-radius: 6px;
+    }
+    
+    .subContainer li {
+        position: relative;
+        left: 20px;
+    }
+    
+    .subContainer th {
+        color: white;
+        background-color: #222222;
+        padding: 1px 20px;
+    }
+    
+    .subContainer td {
+        padding: 1px 20px;
+    }
+    
+    .solidTh th {
+        background-color: #cccccc;
+        color: #222222;
+    }
+    
+    .subImage {
+        text-align: center;
+    }
+    
+    .subImage img {
+        max-width: 180px;
+        border: solid 0.01em #666666;
+        padding: 10px;
+        margin: 10px 10px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1><a href="#">秋林胡说</a></h1>
+        <ul>
+            <li><a href="#">主页</a></li>
+            <li><a href="#">合作</a></li>
+            <li><a href="#">联系我们</a></li>
+            <li><a href="#">订阅</a></li>
+        </ul>
+    </div>
+    <div id="main">
+        <div class="container">
+            <div class="boxdow content">
+                <h2>聊斋志异</h2>
+                <p>作者<a href="#">麻花藤</a>发表时间<a href="#">2107/02/31</a></p>
+                <p>千年前，一个小孩救了一条白蛇，后来白蛇修炼成了人形，为了报恩嫁给了小孩。数十年后白素贞嫌弃许仙渐渐老去的面容而离去，到山里和蝎子精厮混在一起。 满头白发的许仙为了报复白素贞，踏遍了穷山恶水终于找到了七彩葫芦籽，种出来了七个葫芦娃，葫芦娃们打败了白素贞后快乐的生活在森林里。 后来他们遇到了白雪公主，惊为天人！并无微不至的照顾着她，巫婆发现后把七个葫芦娃炼成了七颗龙珠，藏在世界各地，传闻只要集齐七颗龙珠就可以召唤神龙，从此武林引发了一场腥风血雨。 毒王为了结束这场风暴，以一颗眼珠的代价施展了大预言术，得知了会有一个偷学了中国古武术的日本小子集齐龙珠，届时所有人类都会遭到毁灭性的打击。 为拯救人类毒王化身成复仇者联盟的独眼老大，广招天下能人志士，为了唤醒他们的原力启动了星球大战。
+                    <br>大战过后地球植被覆盖率不到万分之一，人类生存环境空前恶劣，这才有了现在熊大熊二为了保护森林与光头强发生的恩恩怨怨！！</p>
+            </div>
+            <div class="boxdow content">
+                <h2>刚刚好！</h2>
+                <p>作者<a href="#">丁三石</a>发表时间<a href="#">2107/02/30</a></p>
+                <p>无论你遇见谁，Ta都是对的人； 无论发生什么事，那都是唯一会发生的事； 不管事情开始于哪个时刻，都是对的时刻； 已经结束的，已经结束了。
+                    <br>
+                    <img src="http://wx4.sinaimg.cn/thumb300/a19c8318ly1fclmvo67myj20ku0rs0xr.jpg" alt="aliga">
+                    <br> 一切都刚刚好，我并未错过任何东西。</p>
+            </div>
+            <div class="boxdow subImage">
+                <img src="http://wx3.sinaimg.cn/thumb300/a19c8318gy1ff2pwmse2pj21901o01gs.jpg" alt="#">
+                <img src="http://wx4.sinaimg.cn/thumb300/a19c8318gy1ff2pwkafhjj21321g2h70.jpg" alt="#">
+                <img src="http://wx1.sinaimg.cn/thumb300/a19c8318gy1ff2pvky2iuj21901o0kjm.jpg" alt="#">
+                <img src="http://wx1.sinaimg.cn/thumb300/a19c8318gy1feeca1cy4fj20qo0zkakz.jpg" alt="#">
+                <img src="http://wx3.sinaimg.cn/thumb300/a19c8318gy1feeca2vu0pj20qo0zkgwh.jpg" alt="#">
+                <img src="http://wx2.sinaimg.cn/thumb300/a19c8318gy1fdkex3oys9j21901o07mq.jpg" alt="#">
+                <img src="http://ww2.sinaimg.cn/thumb300/a19c8318gw1fagaqwpwbpj20qo0zk17t.jpg" alt="#">
+                <img src="http://ww1.sinaimg.cn/thumb300/a19c8318gw1f456gd2cb3j20qo0zk7b3.jpg" alt="#">
+                <img src="http://ww4.sinaimg.cn/thumb300/a19c8318jw1eul2dlrq1kj20qo0zktit.jpg" alt="#">
+                <img src="http://ww2.sinaimg.cn/thumb300/a19c8318jw1et3hxkktovj20qo0zkgsg.jpg" alt="#">
+                <img src="http://ww4.sinaimg.cn/thumb300/a19c8318jw1et3hxj2dqej20qo0zkagy.jpg" alt="#">
+                <img src="http://ww3.sinaimg.cn/thumb300/a19c8318jw1ep91ulu55tj20dc0hs0up.jpg" alt="#">
+            </div>
+            <div class="boxdow subContainer">
+                <h3>更多……</h3>
+                <ol>
+                    <li>O(∩_∩)O</li>
+                    <li>/(ㄒoㄒ)/~~</li>
+                    <li>( •̀ ω •́ )y</li>
+                    <li>凸(艹皿艹 )</li>
+                </ol>
+                <ul>
+                    <li>(￣▽￣)"</li>
+                    <li>~ o(*￣▽￣*)o</li>
+                    <li>b（￣▽￣）d　</li>
+                    <li>
+                        <。)#)))≦</li>
+                </ul>
+                <h3>精彩时刻……</h3>
+                <table>
+                    <tr>
+                        <th>时间</th>
+                        <th>内容</th>
+                        <th>完成情况</th>
+                    </tr>
+                    <tr>
+                        <td>少年</td>
+                        <td>成为国家主席！</td>
+                        <td>Out!</td>
+                    </tr>
+                    <tr>
+                        <td>青年</td>
+                        <td>才貌双全，妻妾成群！</td>
+                        <td>Out!</td>
+                    </tr>
+                    <tr>
+                        <td>晚年</td>
+                        <td>福寿重至，子孙满堂。</td>
+                        <td>unknown！</td>
+                    </tr>
+                    <tr class="solidTh">
+                        <th>总结</th>
+                        <th colspan="2">得过且过</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="boxdow sindebar">
+            <p>登录</p>
+            <form action="formData.html" method="get">
+                <div>
+                    <label for="email">邮箱</label>
+                    <input class="sindebarInput" type="email" name="email" placeholder="输入你的电子邮件">
+                </div>
+                <div>
+                    <label for="password">密码</label>
+                    <input class="sindebarInput" type="password" name="password" minlength="3" maxlength="6" placeholder="输入你的密码，3 - 6位">
+                </div>
+                <div>
+                    <label for="password2">重复密码</label>
+                    <input class="sindebarInput" type="password" minlength="3" maxlength="6" placeholder="重复输入密码">
+                </div>
+                <div>
+                    <label for="gender">性别</label>
+                    男
+                    <input type="radio" name="gender" value="male"> 女
+                    <input type="radio" name="gender" value="female" checked>
+                </div>
+                <div>
+                    <label for="area">地区</label>
+                    <select name="area">
+                        <option value="cn">中国</option>
+                        <option value="us">美国</option>
+                        <option value="jp">日本</option>
+                        <option value="ca" selected>加拿大</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="bent">兴趣</label>
+                    <input type="checkbox">抽烟
+                    <input type="checkbox">喝酒
+                    <br>
+                    <input type="checkbox">烫头</div>
+                <div>
+                    <label for="signature">你的描述</label>
+                    <textarea class="sindebarInput" name="" id="" cols="20" rows="3"></textarea>
+                </div>
+                <input class="submitUp" type="submit" value="注册">
+            </form>
+        </div>
+    </div>
+    <div class="fooder">
+        <p>By <a href="#">CentenT.</a></p>
+    </div>
+</body>
+
+</html>
