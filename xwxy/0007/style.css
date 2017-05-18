@@ -568,6 +568,7 @@ div[class='join-textdiv'] {
 
 .join input[type='button'] {
     flex: none;
+    color: #888;
     font: 14px/0px SimHei;
     width: 640px;
     height: 40px;
