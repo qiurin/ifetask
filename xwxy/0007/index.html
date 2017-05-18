@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>task0007 - 实现常见的技术产品官网的页面架构及样式布局</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div id="header">
+        <a class="logo" href="#">
+            <h1><span></span>新世界</h1></a>
+        <ul class="nav">
+            <li class="navUp"><a href="#">首页</a></li>
+            <li><a href="#">最新活动</a></li>
+            <li><a href="#">项目介绍</a></li>
+            <li><a href="#">爱心社区</a></li>
+            <li><a href="#">关于我们</a></li>
+        </ul>
+        <a class="login" href="#"><span></span>登录</a>
+    </div>
+    <div id="banner">
+        <div class="style-cover">
+            <h2>Time of new life</h2>
+            <p>新时代，年轻的人们让我们一起
+                <br>体验新生活，享受新生活</p>
+            <a href="#">体验生活</a>
+        </div>
+    </div>
+    <div class="tips">
+        <div class="tips01">
+            <p>打造全新世界观，让你更爱你的生活</p>
+        </div>
+        <div class="tips02">
+            <p>丰富多彩的公益活动，发挥新世界的主人公意识</p>
+        </div>
+        <div class="tips03">
+            <p>时尚的新理念，超前体验位置的生活</p>
+        </div>
+        <div class="tips04">
+            <p class="tipsPOut">完善的培养机构，培养你全新的世界观</p>
+        </div>
+    </div>
+    <div class="about">
+        <p>关于新世纪，你不知道的还有什么？</p>
+    </div>
+    <div class="containerMap">
+        <div class="style-cover">
+            <h2>查找新世界城市活动信息</h2>
+            <p>每个城市的有不同的活动信息，请自主查询您所需要了解的城市</p>
+            <form action="data.php" method="get">
+                <select name="country">
+                    <option value="cn">中国</option>
+                </select>
+                <select name="provinc">
+                    <option value="gd">广东省</option>
+                    <option value="hb">河北省</option>
+                    <option value="ln">辽宁省</option>
+                    <option value="bj" selected>北京</option>
+                </select>
+                <select name="city">
+                    <option value="gdzj">湛江市</option>
+                </select>
+                <input type="button" value="搜索">
+            </form>
+        </div>
+    </div>
+    <div class="photoShow">
+        <div>
+            <div>
+                <img src="image/pS01.jpg" alt="#"></div>
+            <h2>北京活动</h2>
+            <p>新社区大联盟</p>
+        </div>
+        <div>
+            <div><img src="image/pS02.jpg" alt="#"></div>
+            <h2>上海活动</h2>
+            <p>夜上海新景观探索</p>
+        </div>
+        <div>
+            <div><img src="image/pS03.jpg" alt="#"></div>
+            <h2>深圳活动</h2>
+            <p>全新海岸线观点站</p>
+        </div>
+        <div>
+            <div><img src="image/pS04.jpg" alt="#"></div>
+            <h2>香港活动</h2>
+            <p>奢侈消费大派送</p>
+        </div>
+    </div>
+    <div class="timeDay">
+        <div class="timeDayLeft">
+            <div class="style-cover">
+                <h2>新世界</h2>TIME
+                <p>@新世界 - 北京
+                    <br>2016.02.29</p>
+            </div>
+        </div>
+        <div class="timeDayRight">
+            <h2>新世界<i>/&nbsp</i><span>01</span></h2>
+            <p>***Library 是一个线上****影片图书馆。你可以搜寻并查询****影片的相关资讯。如果你对****影片不熟，这里会是个危险的地方，因为你将很快地沉迷在其中。如果你已经是个****影片迷，则你大概已经有下列的困扰，这也是我们存在的目的。</p>
+            <a href="#">更多详情</a>
+            <em>●○○</em>
+        </div>
+    </div>
+    <div class="aboutTo">
+        <div class="aboutTo1">
+            <p>新时代
+                <br>关于爱生活的我们</p><span></span><a href="#">查看更多</a></div>
+        <div class="aboutTo2">
+            <p>新时代
+                <br>关于爱生活的我们</p><span></span><a href="#">查看更多</a></div>
+        <div class="aboutTo3">
+            <div class="style-cover">
+            </div>
+        </div>
+    </div>
+    <div class="join">
+        <h2>成为我们的志愿者</h2>
+        <span class="join-b-border"></span>
+        <p>新世界的大家庭需要每一个爱生活的人的加入，如果你狗年轻，有梦想，有激情
+            <br>那就不要犹豫，快来加入我们，成为改变所有人生活的人</p>
+        <div class="join-left">
+            <div>
+                <h2>新世界志愿者协议</h2>
+                <p>加入新世界志愿者的人员必须遵守中华人民共和国的相关法律法规，并且本着平等资源的原则………</p>
+                <a href="#">more</a></div>
+            <div>
+                <h2>新世界志愿者的权利</h2>
+                <p>新世界志愿者享受新世界内部所有资源共享的权利，并且享受所在地区新世界活动的优先参与资格………</p>
+                <a href="#">more</a></div>
+            <div>
+                <h2>更多条款</h2><a href="#">more</a></div>
+        </div>
+        <form class="join-right" action="data.html" method="get">
+            <div><span id="name">姓名：</span>
+                <input type="text" id="name">
+            </div>
+            <div><span>年龄：</span>
+                <input type="text">
+            </div>
+            <div><span>联系方式：</span>
+                <input type="text">
+            </div>
+            <div><span>联系地址：</span>
+                <input type="text">
+            </div>
+            <div class="join-textdiv">
+                <span>请简单描述您梦想的生活：</span>
+                <textarea name="textarea" id="" cols="3" rows="3" minlength="12" maxlength="120" placeholder="输入你的描述，12-120个字母长度"></textarea>
+            </div>
+            <input type="button" value="提交申请">
+        </form>
+    </div>
+    <div id="footer">
+        <h2>联系我们</h2>
+        <p>为了更好的获取我们最新的产品资讯，您可以留下您的电子邮件快速订阅我们的产品资讯
+            <br>也可以通过以下任何方式关注我们的动态</p>
+        <input type="text" placeholder="Someone@email.com">
+        <button>提交</button>
+        <br>
+        <a href="#"><img src="image/iqq.png" alt="QQ"></a>
+        <a href="#"><img src="image/iweibo.png" alt="WeiBo"></a>
+        <a href="#"><img src="image/itwitter.png" alt="Twitter"></a>
+        <a href="#"><img src="image/iweb.png" alt="WEB"></a>
+        <p class="flex-space-between"><span>@2017 新世界</span><a href="#">Back to Top</a></p>
+    </div>
+</body>
+
+</html>
