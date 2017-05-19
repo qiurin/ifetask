@@ -14,7 +14,8 @@ div
     margin: 0;
     padding: 0;
 }
-body{
+body
+{
     width: 100%;
 }
 .shadowbox,
@@ -912,6 +913,8 @@ div[class='join-textdiv']
 
 #footer
 {
+    margin: 0 auto;
+
     background: #33363f;
 }
 
