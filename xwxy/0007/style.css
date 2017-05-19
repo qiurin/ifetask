@@ -82,16 +82,18 @@ select {
 }
 
 .nav li a {
-    color: #888;
     padding: 0px 6px 16px 6px;
-}
 
-.nav a {
     font: 14px/14px Microsoft YaHei;
-    border-bottom: solid 3px #e74f4d;
-}
+    color: #888;
 
-.nav a:hover {
+
+}
+.nav li a {
+    font: 14px/14px Microsoft YaHei;
+    color: #888;
+}
+.nav li:hover a{
     -webkit-transition: 500ms;
     -o-transition: 500ms;
     transition: 500ms;
