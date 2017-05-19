@@ -85,10 +85,6 @@ select {
     color: #888;
 }
 
-.nav a {
-    font: 14px/14px Microsoft YaHei;
-    color: #888;
-}
 
 .nav li:hover a {
     -webkit-transition: 500ms;
