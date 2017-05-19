@@ -82,7 +82,7 @@ select {
 }
 
 .nav li a {
-    padding: 0px 6px 16px 6px;
+    padding: 0px 6px 1px 6px;
     margin: 0;
     font: 14px/14px Microsoft YaHei;
     color: #888;
@@ -90,8 +90,8 @@ select {
 
 }
 .nav a {
-    padding: 0;
-    margin: 0;
+    padding: 1px;
+    margin: 1px;
     font: 14px/14px Microsoft YaHei;
     color: #888;
 }
