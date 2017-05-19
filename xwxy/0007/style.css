@@ -21,8 +21,8 @@ select,
 .banner a,
 .photoShow div div
 {
-    -webkit-box-shadow: 0 0 1px 0 #999;
-            box-shadow: 0 0 1px 0 #999;
+    -webkit-box-shadow: 0px 0px 1px 0 #999;
+            box-shadow: 0px 0px 1px 0 #999;
 }
 
 *
@@ -97,14 +97,15 @@ select
 {
     float: left;
 
-    margin: 0px 1px;
-    padding: 19px 0 0 0;
+    margin: 0;
+    padding: 19px 0px 0px 0px;
 
     list-style: none;
 }
 
 .nav li a
 {
+    margin: 0;
     padding: 16px 8px;
 
     color: #888;
@@ -167,7 +168,7 @@ select
 {
     font: 60px/60px Microsoft YaHei;
 
-    padding: 216px 0 0 118px;
+    padding: 216px 0px 0px 118px;
 
     color: white;
 }
@@ -591,7 +592,7 @@ option
 
     display: block;
 
-    padding: 30px 0 0 20px;
+    padding: 30px 0px 0px 20px;
 
     letter-spacing: 20px;
 
@@ -773,7 +774,7 @@ option
 {
     font: 14px/12px SimHei;
 
-    margin: 0 0 20px 0;
+    margin: 0px 0px 20px 0;
 
     color: #333;
 }
@@ -782,7 +783,7 @@ option
 {
     font: 12px/21px SongTi;
 
-    padding: 10px 0 0;
+    padding: 10px 0px 0px;
 }
 
 .join-left a
@@ -860,7 +861,7 @@ option
 .join-right span
 {
     height: 30px;
-    padding: 20px 0 0 20px;
+    padding: 20px 0px 0px 20px;
 }
 
 div[class='join-textdiv']
@@ -941,7 +942,7 @@ div[class='join-textdiv']
 {
     width: 430px;
     height: 40px;
-    margin: 24px 0 0;
+    margin: 24px 0px 0px;
 
     vertical-align: middle;
 
@@ -954,7 +955,7 @@ div[class='join-textdiv']
 
     width: 80px;
     height: 40px;
-    margin: 24px 0 0;
+    margin: 24px 0px 0px;
 
     vertical-align: middle;
 
