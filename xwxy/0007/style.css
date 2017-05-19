@@ -362,10 +362,11 @@ option
 
     width: 1280px;
     height: 600px;
-    padding: 100px 150px 0px;
+    padding: 100px 150px 0 150px;
 
     background: #ededed;
 
+    justify-content: space-between;
     -webkit-flex-flow: row;
        -moz-flex-flow: row;
         -ms-flex-flow: row;
@@ -382,7 +383,6 @@ option
     display:         flex;
 
     width: 203px;
-    margin: 0 auto;
 
     text-align: center;
 
