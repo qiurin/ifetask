@@ -9,1011 +9,773 @@ input,
 ul,
 select,
 li,
-div
-{
+div {
     margin: 0;
     padding: 0;
 }
 
-
 .shadowbox,
 select,
 .banner a,
-.photoShow div div
-{
+.photoShow div div {
     -webkit-box-shadow: 0px 0px 1px 0 #999;
-            box-shadow: 0px 0px 1px 0 #999;
+    box-shadow: 0px 0px 1px 0 #999;
 }
 
-*
-{
+* {
     -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-a
-{
+a {
     text-decoration: none;
-
     color: black;
 }
 
 input[type='button'],
-select
-{
+select {
     border-style: none;
 }
 
-#header
-{
+#header {
     position: relative;
-
-    clear: both;
-    overflow: hidden;
-
     width: 1280px;
     height: 56px;
     margin: 0 auto;
-    margin: 0 auto;
 }
 
-.logo
-{
+.logo {
     position: absolute;
     top: 50%;
     left: 58px;
-
     -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-         -o-transform: translateY(-50%);
-            transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
-#header a h1
-{
+#header a h1 {
     font: 21px/21px SimHei;
-
     color: #888;
 }
 
-.logo span
-{
+.logo span {
     width: 31px;
     height: 31px;
     padding: 19px;
-
     background: url('image/logo.png') center left no-repeat;
 }
 
-.nav
-{
+.nav ul {}
+
+.nav {
     position: absolute;
     top: 19px;
     right: 146px;
 }
 
-.nav li
-{
+.nav li {
     float: left;
-
+    margin: 0px 1px;
     list-style: none;
 }
 
-.nav li a
-{
-    padding: 16px 8px;
-
+.nav li a {
     color: #888;
+    padding: 0px 6px 16px 6px;
 }
 
-.nav a
-{
+.nav a {
     font: 14px/14px Microsoft YaHei;
 }
 
-.nav a:hover
-{
+.nav a:hover {
     -webkit-transition: 500ms;
-         -o-transition: 500ms;
-            transition: 500ms;
-
+    -o-transition: 500ms;
+    transition: 500ms;
     color: #e74f4d;
     border-bottom: solid 3px #e74f4d;
 }
 
-.navUp a
-{
+.navUp a {
     padding: 16px 8px;
-
     color: #e74f4d;
     border-bottom: solid 3px #e74f4d;
 }
 
-.login span
-{
+.login span {
     padding-left: 17px;
-
     background: url('image/loginBG.png')center left no-repeat;
 }
 
-.login
-{
+.login {
     font: 15px/15px Microsoft YaHei;
-
     position: absolute;
     top: 0;
     right: 66px;
-
     height: 56px;
     padding: 19px;
-
     color: #e74f4d;
 }
 
-#banner
-{
+#banner {
     width: 1280px;
     height: 690px;
     margin: 0 auto;
-
     background: url('image/banner01.jpg') no-repeat fixed center top;
 }
 
-#banner h2
-{
+#banner h2 {
     font: 60px/60px Microsoft YaHei;
-
     padding: 216px 0px 0px 118px;
-
     color: white;
 }
 
-#banner p
-{
+#banner p {
     font: 21px/36px Microsoft YaHei;
-
     margin: 20px 0 78px 128px;
-
     color: white;
 }
 
-#banner a
-{
+#banner a {
     font: 30px/10px Microsoft YaHei;
-
     margin-left: 128px;
     padding: 12px 105px;
-
     color: white;
     background: #e74f4d;
 }
 
-#banner a:hover
-{
+#banner a:hover {
     color: #e74f4d;
     background: white;
 }
 
-.tips
-{
+.tips {
     display: -webkit-flex;
-    display:    -moz-flex;
-    display:     -ms-flex;
-    display:      -o-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
     display: -webkit-flex;
-    display:    -moz-flex;
-    display:     -ms-flex;
-    display:      -o-flex;
-    display:         flex;
-
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
     width: 1280px;
     height: 250px;
     margin: 0 auto;
-
     -webkit-flex-flow: row;
-       -moz-flex-flow: row;
-        -ms-flex-flow: row;
-         -o-flex-flow: row;
-            flex-flow: row;
+    -moz-flex-flow: row;
+    -ms-flex-flow: row;
+    -o-flex-flow: row;
+    flex-flow: row;
 }
 
-.tips div
-{
+.tips div {
     width: 25%;
 }
 
 .tips01,
 .tips02,
 .tips03,
-.tips04
-{
+.tips04 {
     width: 42px;
     height: 42px;
     padding-top: 130px;
-
     background: url('image/tips01.png')no-repeat center;
 }
 
-.tips02
-{
+.tips02 {
     background: url('image/tips02.png')no-repeat center;
 }
 
-.tips03
-{
+.tips03 {
     background: url('image/tips03.png')no-repeat center;
 }
 
-.tips04
-{
+.tips04 {
     background: url('image/tips04.png')no-repeat center;
 }
 
-.tips p
-{
+.tips p {
     font: 14px/18px SimHei;
-
     margin: 0 auto;
     padding: 0 70px;
-
     text-align: center;
-
     color: #666;
     border-right: solid 1px #ccc;
 }
 
-.tips04 p
-{
+.tips04 p {
     border-right: none;
 }
 
-.about
-{
+.about {
     font: 54px/20px SimHei;
-
     width: 1280px;
     height: 360px;
     margin: 0 auto;
     padding-top: 230px;
-
     text-align: center;
-
     color: #777;
     background: #ededed url('image/logoB.png') no-repeat center 90px;
 }
 
-.containerMap
-{
+.containerMap {
     width: 1280px;
     height: 340px;
     margin: 0 auto;
-
     text-align: center;
-
     background: url('image/bannerMap.jpg') no-repeat center;
 }
 
-.containerMap h2
-{
+.containerMap h2 {
     font: 21px/21px Microsoft YaHei;
-
     margin: 0;
     padding-top: 43px;
-
     color: white;
 }
 
-.containerMap p
-{
+.containerMap p {
     font: 12px/12px Microsoft YaHei;
-
     padding: 23px 0 40px;
-
     color: white;
 }
 
-select
-{
+select {
     width: 236px;
     height: 36px;
     margin: 14px;
     padding: 0 13px;
-
     color: #888;
     background: white url('image/selectIcon.png') no-repeat 206px center;
-
     -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
-.containerMap input
-{
+.containerMap input {
     font: 14px/14px Microsoft YaHei;
-
     width: 236px;
     height: 36px;
     margin: 14px;
     padding-left: 22px;
-
     text-align: center;
     letter-spacing: 22px;
-
     color: white;
     background: #be4f48;
 }
 
-select::-ms-expand
-{
+select::-ms-expand {
     display: none;
 }
 
-option
-{
+option {
     font: 12px/12px Microsoft YaHei;
     font-weight: normal;
-
     color: #666;
     background: #eee url('image/selectLTicon.png')no-repeat 6px center;
 }
 
-.photoShow
-{
+.photoShow {
     display: -webkit-flex;
-    display:    -moz-flex;
-    display:     -ms-flex;
-    display:      -o-flex;
-    display:         flex;
-
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
     width: 1280px;
     height: 600px;
     margin: 0 auto;
     padding: 100px 150px 0 150px;
-
     background: #ededed;
-
     justify-content: space-between;
     -webkit-flex-flow: row;
-       -moz-flex-flow: row;
-        -ms-flex-flow: row;
-         -o-flex-flow: row;
-            flex-flow: row;
+    -moz-flex-flow: row;
+    -ms-flex-flow: row;
+    -o-flex-flow: row;
+    flex-flow: row;
 }
 
-.photoShow div
-{
+.photoShow div {
     display: -webkit-flex;
-    display:    -moz-flex;
-    display:     -ms-flex;
-    display:      -o-flex;
-    display:         flex;
-
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
     width: 203px;
-
     text-align: center;
-
     -webkit-flex-flow: column nowrap;
-       -moz-flex-flow: column nowrap;
-        -ms-flex-flow: column nowrap;
-         -o-flex-flow: column nowrap;
-            flex-flow: column nowrap;
+    -moz-flex-flow: column nowrap;
+    -ms-flex-flow: column nowrap;
+    -o-flex-flow: column nowrap;
+    flex-flow: column nowrap;
 }
 
-.photoShow div:hover div
-{
+.photoShow div:hover div {
     -webkit-transition: transform .5s .5s;
-         -o-transition: transform .5s .5s;
-            transition: transform .5s .5s;
+    -o-transition: transform .5s .5s;
+    transition: transform .5s .5s;
     -webkit-transform: rotateY(360deg);
-        -ms-transform: rotateY(360deg);
-         -o-transform: rotateY(360deg);
-            transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg);
 }
 
-.photoShow div:hover h2
-{
+.photoShow div:hover h2 {
     font: bold 22px/44px Microsoft YaHei;
-
     padding-left: 20px;
-
     -webkit-transition: all 1s;
-         -o-transition: all 1s;
-            transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
     letter-spacing: 20px;
-
     -webkit-order: -3;
-       -moz-order: -3;
-        -ms-order: -3;
-         -o-order: -3;
-            order: -3;
+    -moz-order: -3;
+    -ms-order: -3;
+    -o-order: -3;
+    order: -3;
 }
 
-.photoShow div:hover p
-{
+.photoShow div:hover p {
     -webkit-order: -1;
-       -moz-order: -1;
-        -ms-order: -1;
-         -o-order: -1;
-            order: -1;
+    -moz-order: -1;
+    -ms-order: -1;
+    -o-order: -1;
+    order: -1;
 }
 
-.photoShow img
-{
+.photoShow img {
     width: 100%;
     height: 100%;
 }
 
-.photoShow h2
-{
+.photoShow h2 {
     font: 16px/44px Microsoft YaHei;
-
     width: 100%;
     height: 40px;
-
     color: #555;
 }
 
-.photoShow p
-{
+.photoShow p {
     font: 14px/14px Microsoft YaHei;
-
     width: 100%;
     height: 30px;
-
     color: #999;
 }
 
-.photoShow div div
-{
+.photoShow div div {
     width: 219px;
     height: 332px;
     padding: 10px 8px;
-
     background: white;
 }
 
-.timeDay
-{
+.timeDay {
     font: 158px/140px Microsoft YaHei;
-
     display: -webkit-flex;
-    display:    -moz-flex;
-    display:     -ms-flex;
-    display:      -o-flex;
-    display:         flex;
-
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
     width: 1280px;
     margin: 0 auto;
-
     text-align: center;
-
     color: white;
-
     -webkit-flex-flow: row;
-       -moz-flex-flow: row;
-        -ms-flex-flow: row;
-         -o-flex-flow: row;
-            flex-flow: row;
+    -moz-flex-flow: row;
+    -ms-flex-flow: row;
+    -o-flex-flow: row;
+    flex-flow: row;
 }
 
-.timeDayLeft
-{
+.timeDayLeft {
     width: 850px;
     height: 566px;
-
     background: url('image/banner02.jpg') no-repeat center;
 }
 
-.timeDayLeft h2
-{
+.timeDayLeft h2 {
     font: 50px/55px Microsoft YaHei;
-
     margin: 0;
     padding-top: 120px;
 }
 
-.timeDayLeft p
-{
+.timeDayLeft p {
     font: 22px/43px Microsoft YaHei;
-
     padding-top: 20px;
 }
 
-.timeDayRight
-{
+.timeDayRight {
     width: 430px;
     height: 566px;
     padding: 0 70px;
 }
 
-.timeDayRight h2
-{
+.timeDayRight h2 {
     font: 20px/20px Microsoft YaHei;
-
     padding-top: 55px;
-
     color: #333;
 }
 
-.timeDayRight p
-{
+.timeDayRight p {
     font: 12px/30px SongTi;
-
     padding: 31px 0 20px 0;
-
     text-align: left;
-
     color: #aaa;
 }
 
-.timeDayRight a
-{
+.timeDayRight a {
     font: 12px/12px Microsoft YaHei;
-
     padding: 15px 53px;
-
     -webkit-transition: .5s;
-         -o-transition: .5s;
-            transition: .5s;
-
+    -o-transition: .5s;
+    transition: .5s;
     color: #e74f4d;
     border: solid 1px #e74f4d;
 }
 
-.timeDayRight span
-{
+.timeDayRight span {
     color: #e74f4d;
 }
 
 .timeDayRight a:hover,
-.aboutTo2 a:hover
-{
+.aboutTo2 a:hover {
     color: white;
     background: #e74f4d;
 }
 
-.aboutTo div:hover p
-{
+.aboutTo div:hover p {
     font: 33px/43px Microsoft YaHei;
-
     -webkit-transition: all .5s;
-         -o-transition: all .5s;
-            transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
 }
 
-.timeDayRight em
-{
+.timeDayRight em {
     font: 32px/22px Microsoft YaHei;
-
     display: block;
-
     padding: 30px 0px 0px 20px;
-
     letter-spacing: 20px;
-
     color: #e74f4d;
 }
 
-.aboutTo
-{
+.aboutTo {
     position: relative;
-
     display: -webkit-flex;
-    display:    -moz-flex;
-    display:     -ms-flex;
-    display:      -o-flex;
-    display:         flex;
-
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
     width: 1280px;
     margin: 0 auto;
-
     -webkit-flex-flow: row;
-       -moz-flex-flow: row;
-        -ms-flex-flow: row;
-         -o-flex-flow: row;
-            flex-flow: row;
+    -moz-flex-flow: row;
+    -ms-flex-flow: row;
+    -o-flex-flow: row;
+    flex-flow: row;
 }
 
 .aboutTo1,
-.aboutTo2
-{
+.aboutTo2 {
     font: 21px/29px SimHei;
-
     width: 425px;
     height: 520px;
     padding-top: 172px;
-
     text-align: center;
-
     color: white;
     background: #e74f4d;
 }
 
 .aboutTo2,
-.aboutTo1 a:hover
-{
+.aboutTo1 a:hover {
     color: #e74f4d;
     background: white;
 }
 
 .aboutTo1:hover span,
-.aboutTo2:hover span
-{
+.aboutTo2:hover span {
     padding: 2px 60px;
 }
 
-.aboutTo3
-{
+.aboutTo3 {
     width: 430px;
     height: 520px;
-
     background: url('image/i001.jpg');
 }
 
-.aboutTo span
-{
+.aboutTo span {
     display: block;
-
     width: 40px;
     margin: 30px auto 40px;
     padding: 2px 10px;
-
     -webkit-transition: 1s;
-         -o-transition: 1s;
-            transition: 1s;
-
+    -o-transition: 1s;
+    transition: 1s;
     border-bottom: solid 3px #ccc;
 }
 
-.aboutTo a
-{
+.aboutTo a {
     padding: 11px 42px;
-
     -webkit-transition: .5s;
-         -o-transition: .5s;
-            transition: .5s;
-
+    -o-transition: .5s;
+    transition: .5s;
     color: white;
     border: solid 1px white;
 }
 
-.aboutTo2 a
-{
+.aboutTo2 a {
     padding: 11px 42px;
-
     -webkit-transition: .5s;
-         -o-transition: .5s;
-            transition: .5s;
-
+    -o-transition: .5s;
+    transition: .5s;
     color: #e74f4d;
     border: solid 1px #e74f4d;
 }
 
-.join
-{
+.join {
     width: 1280px;
     height: 750px;
     margin: 0 auto;
     padding: 0 135px;
-
     text-align: center;
 }
 
-.join-b-border
-{
+.join-b-border {
     padding: 0 20px;
-
     -webkit-transition: 1s;
-         -o-transition: 1s;
-            transition: 1s;
-
+    -o-transition: 1s;
+    transition: 1s;
     border-bottom: solid 3px #e74f4d;
 }
 
-.join h2
-{
+.join h2 {
     font: 21px/21px SimHei;
-
     margin-top: 150px;
-
     color: #323305;
 }
 
-.join p
-{
+.join p {
     font: 12px/18px Microsoft YaHei;
-
     padding: 20px 0 120px 0;
-
     color: #aaa;
 }
 
-.join:hover span[class='join-b-border']
-{
+.join:hover span[class='join-b-border'] {
     padding: 0 160px;
 }
 
-.join-left
-{
+.join-left {
     float: left;
-
     width: 286px;
-
     text-align: left;
 }
 
-.join-right
-{
+.join-right {
     font: 12px/0 SongTi;
-
     display: -webkit-flex;
-    display:    -moz-flex;
-    display:     -ms-flex;
-    display:      -o-flex;
-    display:         flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
     float: right;
-
     width: 640px;
-
     color: #888;
-
     -webkit-flex-flow: row wrap;
-       -moz-flex-flow: row wrap;
-        -ms-flex-flow: row wrap;
-         -o-flex-flow: row wrap;
-            flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    -o-flex-flow: row wrap;
+    flex-flow: row wrap;
     justify-content: space-between;
 }
 
-.join-left h2
-{
+.join-left h2 {
     font: 14px/12px SimHei;
-
     margin: 0px 0px 20px 0;
-
     color: #333;
 }
 
-.join-left p
-{
+.join-left p {
     font: 12px/21px SongTi;
-
     padding: 10px 0px 0px;
 }
 
-.join-left a
-{
+.join-left a {
     font-size: 12px;
-
     margin-left: 230px;
     padding-left: 20px;
-
     color: #707070;
     background: url(image/more_unfold.png) no-repeat left center;
 }
 
-.join-left div
-{
+.join-left div {
     margin-bottom: 20px;
 }
 
-.join-right input
-{
+.join-right input {
     width: 100%;
     height: 100%;
     padding: 6px 6px 6px 6px;
-
     border-style: none;
     background: #ededed;
-
     flex: 1;
 }
 
 .join-right div:hover,
 .join-right div:hover input,
 .join-right div:hover textarea::placeholder,
-.join-right div:hover textarea
-{
+.join-right div:hover textarea {
     color: white;
     background: #e74f4d;
 }
 
-.join-right div
-{
+.join-right div {
     display: -webkit-flex;
-    display:    -moz-flex;
-    display:     -ms-flex;
-    display:      -o-flex;
-    display:         flex;
-
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
     width: 310px;
     height: 40px;
     margin-bottom: 20px;
-
     text-align: left;
-
     background: #ededed;
 }
 
-.join-right textarea
-{
+.join-right textarea {
     font: 16px/26px Microsoft YaHei;
-
     margin: 0 20px 10px 20px;
-
     resize: none;
-
     border-style: none;
     background: #ededed;
-
     -webkit-flex: 1;
-       -moz-flex: 1;
-        -ms-flex: 1;
-         -o-flex: 1;
-            flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    -o-flex: 1;
+    flex: 1;
 }
 
-.join-right span
-{
+.join-right span {
     height: 30px;
     padding: 20px 0px 0px 20px;
 }
 
-div[class='join-textdiv']
-{
+div[class='join-textdiv'] {
     display: -webkit-flex;
-    display:    -moz-flex;
-    display:     -ms-flex;
-    display:      -o-flex;
-    display:         flex;
-
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
     width: 640px;
     height: 116px;
-
     -webkit-flex: none;
-       -moz-flex: none;
-        -ms-flex: none;
-         -o-flex: none;
-            flex: none;
+    -moz-flex: none;
+    -ms-flex: none;
+    -o-flex: none;
+    flex: none;
     -webkit-flex-flow: column;
-       -moz-flex-flow: column;
-        -ms-flex-flow: column;
-         -o-flex-flow: column;
-            flex-flow: column;
+    -moz-flex-flow: column;
+    -ms-flex-flow: column;
+    -o-flex-flow: column;
+    flex-flow: column;
 }
 
-.join input[type='button']
-{
+.join input[type='button'] {
     font: 14px/0 SimHei;
-
     width: 640px;
     height: 40px;
-
     color: #888;
-
     -webkit-flex: none;
-       -moz-flex: none;
-        -ms-flex: none;
-         -o-flex: none;
-            flex: none;
+    -moz-flex: none;
+    -ms-flex: none;
+    -o-flex: none;
+    flex: none;
 }
 
 .join input[type='button']:hover,
-#footer button:hover
-{
+#footer button:hover {
     color: white;
     background: #e74f4d;
 }
 
-#footer
-{
+#footer {
     font-size: 0;
-
     position: relative;
-
     width: 100%;
     min-width: 1280px;
     height: 415px;
     margin: 0 auto;
     padding: 80px 0;
-
     text-align: center;
-
     color: white;
     background: #33363f;
 }
 
-#footer h2
-{
+#footer h2 {
     font: 21px/38px SimHei;
 }
 
-#footer p
-{
+#footer p {
     font: 12px/26px SongTi;
 }
 
-#footer input
-{
+#footer input {
     width: 430px;
     height: 40px;
     margin: 24px 0px 0px;
-
     vertical-align: middle;
-
     border: none;
 }
 
-#footer button
-{
+#footer button {
     font: 15px/10px Microsoft YaHei;
-
     width: 80px;
     height: 40px;
     margin: 24px 0px 0px;
-
     vertical-align: middle;
-
     color: #66363f;
     border: none;
 }
 
-#footer img
-{
+#footer img {
     margin: 30px 12px;
 }
 
-#footer a
-{
+#footer a {
     color: white;
 }
 
-.top
-{
+.top {
     position: absolute;
     bottom: 0;
-
     width: 100%;
     height: 68px;
     margin: 0 auto;
-
     text-align: center;
-
     background: #30303a;
 }
 
-.flex-space-between
-{
+.flex-space-between {
     display: -webkit-flex;
-    display:    -moz-flex;
-    display:     -ms-flex;
-    display:      -o-flex;
-    display:         flex;
-
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
     width: 1280px;
     margin: 0 auto;
     padding: 22px 90px 20px;
-
     color: white;
-
     justify-content: space-between;
 }
 
-.style-cover
-{
+.style-cover {
     width: 100%;
     height: 100%;
-
     -webkit-transition: .5s;
-         -o-transition: .5s;
-            transition: .5s;
-
+    -o-transition: .5s;
+    transition: .5s;
     background: rgba(0, 0, 0, .2);
 }
 
 .style-cover:hover,
-.aboutTo:hover div[class='style-cover']
-{
+.aboutTo:hover div[class='style-cover'] {
     background: rgba(0, 0, 0, 0);
 }
