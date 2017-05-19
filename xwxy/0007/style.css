@@ -88,6 +88,7 @@ select {
 
 .nav a {
     font: 14px/14px Microsoft YaHei;
+    border-bottom: solid 3px #e74f4d;
 }
 
 .nav a:hover {
@@ -99,8 +100,6 @@ select {
 }
 
 .navUp a {
-    padding: 16px 8px;
-    color: #e74f4d;
     border-bottom: solid 3px #e74f4d;
 }
 
