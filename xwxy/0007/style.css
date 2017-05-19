@@ -67,35 +67,30 @@ select {
     background: url('image/logo.png') center left no-repeat;
 }
 
-.nav ul {}
-
 .nav {
     position: absolute;
+    text-align: right;
     top: 19px;
     right: 146px;
 }
 
 .nav li {
-    float: left;
-    margin: 0px 1px;
+    display: inline;
     list-style: none;
 }
 
 .nav li a {
-    padding: 0px 6px 1px 6px;
-    margin: 0;
+    padding: 0px 6px 16px 6px;
     font: 14px/14px Microsoft YaHei;
     color: #888;
-
-
 }
+
 .nav a {
-    padding: 1px;
-    margin: 1px;
     font: 14px/14px Microsoft YaHei;
     color: #888;
 }
-.nav li:hover a{
+
+.nav li:hover a {
     -webkit-transition: 500ms;
     -o-transition: 500ms;
     transition: 500ms;
