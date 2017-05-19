@@ -89,7 +89,7 @@ select
 .nav
 {
     position: absolute;
-    top: 0;
+    top: 19px;
     right: 146px;
 }
 
@@ -97,15 +97,11 @@ select
 {
     float: left;
 
-    margin: 0;
-    padding: 19px 0px 0px 0px;
-
     list-style: none;
 }
 
 .nav li a
 {
-    margin: 0;
     padding: 16px 8px;
 
     color: #888;
