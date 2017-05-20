@@ -106,7 +106,6 @@ select
     color: #888;
 }
 
-
 .nav li:hover a
 {
     -webkit-transition: 500ms;
@@ -556,6 +555,11 @@ option
 .timeDayRight span
 {
     color: #e74f4d;
+}
+
+.timeDayRight i
+{
+    padding: 0 6px;
 }
 
 .timeDayRight a:hover,
