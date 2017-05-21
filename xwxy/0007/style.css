@@ -15,6 +15,13 @@ div
     padding: 0;
 }
 
+p,
+h1,
+h2
+{
+    cursor: default;
+}
+
 .shadowbox,
 select,
 .banner a,
