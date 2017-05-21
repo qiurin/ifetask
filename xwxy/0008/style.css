@@ -1,0 +1,113 @@
+body
+{
+    margin: 0;
+    padding: 10px;
+}
+
+*
+{
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+
+    cursor: default;
+}
+
+div:before,
+div:after
+{
+    display: table;
+    clear: both;
+
+    content: '';
+}
+
+div
+{
+    line-height: 50px;
+
+    float: left;
+
+    min-width: 0;
+    height: 50px;
+    margin: 10px;
+
+    text-align: center;
+
+    border: solid .01em #999;
+    background: #ffd;
+}
+
+.box1,
+.box2,
+.box3
+{
+    background: #fdf;
+}
+
+.box4,
+.box5,
+.box6
+{
+    background: #dff;
+}
+
+.box7,
+.box8
+{
+    width: calc(100% / 12 * 1 - 20px);
+}
+
+.box9,
+.box10
+{
+    width: calc(100% / 12 * 2 - 20px);
+}
+
+.box4,
+.box6
+{
+    width: calc(100% / 12 * 3 - 20px);
+}
+
+.box1,
+.box2,
+.box3
+{
+    width: calc(100% / 12 * 4 - 20px);
+}
+
+.box5,
+.box11
+{
+    width: calc(100% / 12 * 6 - 20px);
+}
+
+@media all and (max-width: 768px)
+{
+    .box7,
+    .box8
+    {
+        width: calc(100% / 12 * 2 - 20px);
+    }
+    .box4.box6,
+    .box10,
+    .box11
+    {
+        width: calc(100% / 12 * 3 - 20px);
+    }
+    .box1,
+    .box2,
+    .box5
+    {
+        width: calc(100% / 12 * 6 - 20px);
+    }
+    .box9
+    {
+        width: calc(100% / 12 * 8 - 20px);
+    }
+    .box3
+    {
+        width: calc(100% / 12 * 12 - 20px);
+    }
+}
